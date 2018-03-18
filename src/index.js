@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 const Page = () => (
   <div>
     <p>
-      Ejemplo webpack, si me vez funciona React
+      Funciona
     </p>
   </div>
 );
