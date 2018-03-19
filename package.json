@@ -26,7 +26,12 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+<<<<<<< HEAD
     "react-here-maps": "^0.4.0"
+=======
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
+>>>>>>> ef19fe8122ce5727be56d525cc52149fe2c25a23
   },
   "scripts": {
     "start": "webpack-dev-server"
