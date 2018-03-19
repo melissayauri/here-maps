@@ -1,5 +1,5 @@
 {
-  "name": "Here Maps",
+  "name": "",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Lilliam Haro & Melissa Yauri ",
@@ -25,7 +25,8 @@
     "popper.js": "^1.14.1",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-here-maps": "^0.4.0"
   },
   "scripts": {
     "start": "webpack-dev-server"
