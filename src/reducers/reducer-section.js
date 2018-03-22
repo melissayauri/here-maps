@@ -1,4 +1,3 @@
 export default function(){
-  return [ 'Rutas del Mundo','kj'
-    ]
+  return [ 'Rutas del Mundo','kj']
 }
