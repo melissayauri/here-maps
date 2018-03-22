@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import Header from '../containers/container-header'
 import Section from '../containers/container-section'
-import SimpleMap from './map'
+import MyMap from './map'
 
 
 
@@ -10,7 +10,7 @@ const App = () => (
   <div>
   <Header/>
   <Section/>
-  <SimpleMap/>
+  <MyMap/>
   </div>
 );
 export default App

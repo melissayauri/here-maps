@@ -1,35 +1,54 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+class MyMap extends Component {
 
-class SimpleMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33
-    },
-    zoom: 11
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      center: {
+      lat: -12.111062,
+      lng: -77.0315913
+     }
+    };
+    this.onMyPos = this.onMyPos.bind(this);
+  }
+
+onMyPos() {
+  this.search();
+}
+
+search() {
+  //alert('funciona!!')
+        if (navigator && navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                const coords = position.coords;
+                console.log(coords)
+                this.setState({
+                    currentLocation: {
+                        lat: coords.latitude,
+                        lng: coords.longitude
+                    }
+                })
+            })
+        }
+  }
+
 
   render() {
+     const {center} = this.state
     return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div style={{ height: '80vh', width: '100%' }}>
+      <button onClick={this.onMyPos}>Mi ubicacion</button>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyDT1FgK8pARI-hv79674w5U05px8_Vt5zI'}}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
+          defaultCenter={center}
+          defaultZoom={12}
         >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text={'Kreyser Avrora'}
-          />
         </GoogleMapReact>
       </div>
     );
   }
 }
 
-export default SimpleMap;
+export default MyMap;
