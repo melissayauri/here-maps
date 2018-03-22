@@ -1,6 +1,6 @@
 export default function(){
-  return { 
-  	logo : 'HERE',
+  return {
+  	logo : 'Rutapp',
   	logoimg: 'here.png',
   	textocentral: 'search your place'
   }

@@ -2,6 +2,8 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
+	 font-family: 'Cookie', cursive;
+	 font-size: 3rem;
 }
 
 .text-center {
@@ -13,22 +15,43 @@
 }
 
 .header {
-	background-color: #6fbb01;
-color: white;
-	padding: 5px 0 18px; 
-	
+	background-color: #fe9a01;
+	color: white;
+	padding: 5px 0 18px;
+
+}
+.navbar{
+	margin-bottom: 0px;
 }
 
-
+footer{
+		background-color: #fe9a01;
+		color: white;
+		font-size: 3rem;
+}
+footer p{
+	color: white;
+}
+.map{
+	text-align: center;
+	background-color: #e6e6e6;
+	font-size: 5rem;
+}
 
 img {
-	height: 50px;
+	height: 35px;
+	margin-bottom: 5rem;
 }
 .texto-logo {
-	font-weight: bold;
-	color: white;
-	font-size: 20px;
-	width: 150px
+	display: flex;
+	flex-direction: row;
+
+
 }
-
-
+.texto-logo  span{
+	color: white;
+	margin-left: 2rem;
+	font-size: 30px;
+	display: block;
+	margin-top: 1rem;
+}

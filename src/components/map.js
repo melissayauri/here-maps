@@ -19,27 +19,36 @@ onMyPos() {
 }
 
 search() {
-  //alert('funciona!!')
+  //console.log('funciona!!')
         if (navigator && navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
                 const coords = position.coords;
                 console.log(coords)
-                this.setState({
-                    currentLocation: {
-                        lat: coords.latitude,
-                        lng: coords.longitude
-                    }
-                })
+                let lat = coords.latitude;
+                let lng = coords.longitude
+                var geocoder = new google.maps.Geocoder();
+                var latlng = new google.maps.LatLng(lat, lng);
+                geocoder.geocode({'location': latlng}, function(results, status) {
+                  if (status === google.maps.GeocoderStatus.OK) {
+                  // ubicacion más exacta
+                  let myUbicationEx = results[0].formatted_address;
+                  // Forma corta 
+                  let myUbication = results[1].formatted_address;
+                  alert('Tu ubicación actual es: ' + myUbication + '----' + myUbicationEx);
+                  } else {
+                  alert('ocurrio un error inesperado');
+                 }
+              });
             })
+          }
         }
-  }
 
 
   render() {
      const {center} = this.state
     return (
-      <div style={{ height: '80vh', width: '100%' }}>
-      <button onClick={this.onMyPos}>Mi ubicacion</button>
+      <div style={{ height: '50vh', width: '100%' }}>
+      <button style={{ height: '15', width: '100%' }} onClick={this.onMyPos}>Mi ubicacion</button>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyDT1FgK8pARI-hv79674w5U05px8_Vt5zI'}}
           defaultCenter={center}
