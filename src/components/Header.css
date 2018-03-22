@@ -14,14 +14,28 @@
 }
 
 .header {
-background-color: #6fbb01;
+	background-color: #6fbb01;
 color: white;
+	padding: 5px 0 18px; 
+	
 }
 
-.map{
-	height: 500px;
-}
 
 footer{
 		background-color: #e6e6e6;
 }
+
+
+
+img {
+	height: 50px;
+}
+.texto-logo {
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	width: 150px
+}
+
+
+
