@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "",
   "license": "MIT",
-  "homepage": "https://LilliamHaro.github.io",
+  "homepage": "https://melissayauri.github.io",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -37,10 +37,7 @@
     "redux": "^3.7.2"
   },
   "scripts": {
-
     "deploy": "gh-pages -d public",
     "start": "webpack-dev-server"
-
-
   }
 }
