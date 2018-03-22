@@ -37,8 +37,8 @@
     "redux": "^3.7.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+
+    "deploy": "gh-pages -d public",
     "start": "webpack-dev-server"
 
 
