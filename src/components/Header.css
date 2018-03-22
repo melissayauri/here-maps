@@ -8,14 +8,18 @@
 	text-align: center;
 }
 
+.navbar-default .navbar-nav>li>a{
+	color: white;
+}
+
 .header {
+	background-color: #6fbb01;
+color: white;
 	padding: 5px 0 18px; 
 	
 }
 
-.bg-black {
-	background-color: black;
-}
+
 
 img {
 	height: 50px;
@@ -26,3 +30,5 @@ img {
 	font-size: 20px;
 	width: 150px
 }
+
+
