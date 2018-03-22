@@ -1,7 +1,7 @@
 import React from 'react';
-
+import './Header.css';
  const Section = ({mapa}) => (
- 	<div>{mapa[0]}</div>
+ 	<div className="map">{mapa[0]}</div>
  	)
 
  export default Section
