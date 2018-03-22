@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "",
   "license": "MIT",
+  "homepage": "https://melissayauri.github.io",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
